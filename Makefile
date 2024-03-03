@@ -13,6 +13,8 @@ build-site: build
 	mkdir www/dist
 	cd www && npm run build
 	cp -r www/img www/dist
+	cp www/style.css www/dist
+	cp www/experiment.html www/dist
 
 start-server: build
 	cd www && npm start
